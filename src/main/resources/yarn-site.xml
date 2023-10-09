@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>bigdata003</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.env-whitelist</name>
+        <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
+    </property>
+	
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>true</value>
+	</property>
+    
+    <property>
+        <name>yarn.log-aggregation.retain-seconds</name>
+        <value>604800</value>
+    </property>
+    
+	<property>
+        <name>yarn.scheduler.minimum-allocation-mb</name>
+        <value>2048</value>
+    </property>
+    <property>
+  	    <name>yarn.scheduler.minimum-allocation-mb</name>
+  	    <value>2048</value>
+    </property>
+    <property>
+	    <name>yarn.nodemanager.vmem-pmem-ratio</name>
+	    <value>2.1</value>
+    </property>
+    <property>
+	    <name>mapred.child.java.opts</name>
+	    <value>-Xmx1536m</value>
+    </property>
+</configuration>

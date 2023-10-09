@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+	<property>
+		<name>dfs.replication</name>
+		<value>3</value>
+	</property>
+    
+	<property>
+		<name>dfs.namenode.name.dir</name>
+		<value>file:/opt/softs/hadoop-3.1.3/data/dfs/name</value>
+	</property>
+	
+	<property>
+		<name>dfs.datanode.data.dir</name>
+		<value>file:/opt/softs/hadoop-3.1.3/data/dfs/data</value>
+	</property>
+   
+	<property>
+        <name>dfs.namenode.http-address</name>
+        <value>bigdata001:9870</value>
+    </property>
+	
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>bigdata002:9868</value>
+    </property>
+</configuration>
